@@ -23,7 +23,7 @@ export const About = () => {
       role: "Head of Training & Co-Founder",
       expertise: "Education & Skill Development",
       background: "Passionate educator focused on building technical capacity across Chad. Designs and delivers comprehensive training programs.",
-      skills: ["Training Design", "Curriculum Development", "Mentorship", "Technical Education"]
+      skills: ["Training Design", "Curriculum Development", "Mentorship", "Technical Education", "Data Science", "Machine Learning", "Cloud Computing"]
     }
   ];
 
