@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, GraduationCap, Shield, Smartphone, Globe } from "lucide-react";
+import { Code, Database, GraduationCap, Shield, Smartphone, Globe, ShoppingCart } from "lucide-react";
 
 export const Services = () => {
   const services = [
@@ -27,6 +27,12 @@ export const Services = () => {
       title: "Software Engineering Training",
       description: "Comprehensive training programs to build the next generation of developers",
       technologies: ["Bootcamps", "Workshops", "Mentorship", "Certification"]
+    },
+    {
+      icon: <ShoppingCart className="w-8 h-8" />,
+      title: "E-commerce Training",
+      description: "Learn to build and manage online stores and digital marketplaces",
+      technologies: ["Shopify", "WooCommerce", "Payment Systems", "Digital Marketing"]
     },
     {
       icon: <Code className="w-8 h-8" />,

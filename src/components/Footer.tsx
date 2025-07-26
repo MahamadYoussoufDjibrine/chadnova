@@ -62,18 +62,18 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
-                <span>+235 XX XX XX XX</span>
+                <span>+250 XX XX XX XX</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" />
-                <span>N'Djamena, Chad</span>
+                <span>Kigali, Rwanda - KG 667st</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 mt-12 text-center text-primary-foreground/60">
-          <p>&copy; 2024 TchadNova. All rights reserved. Built with ❤️ in Chad.</p>
+          <p>&copy; 2024 TchadNova. All rights reserved. Built with ❤️ in Rwanda.</p>
         </div>
       </div>
     </footer>
