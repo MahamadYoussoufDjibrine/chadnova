@@ -46,7 +46,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Call Us</h4>
-                  <p className="text-muted-foreground">+235 XX XX XX XX</p>
+                  <p className="text-muted-foreground">+250 XX XX XX XX</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Visit Us</h4>
-                  <p className="text-muted-foreground">N'Djamena, Chad</p>
+                  <p className="text-muted-foreground">Kigali, Rwanda - KG 667st</p>
                 </div>
               </div>
             </div>
