@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Code2 } from "lucide-react";
+import { GetStartedDialog } from "@/components/GetStartedDialog";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +37,11 @@ export const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="sm">
-              Get Started
-            </Button>
+            <GetStartedDialog>
+              <Button variant="hero" size="sm">
+                Get Started
+              </Button>
+            </GetStartedDialog>
           </div>
 
           {/* Mobile Menu Button */}
@@ -64,9 +67,11 @@ export const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="w-fit">
-                Get Started
-              </Button>
+              <GetStartedDialog>
+                <Button variant="hero" size="sm" className="w-fit">
+                  Get Started
+                </Button>
+              </GetStartedDialog>
             </div>
           </div>
         )}

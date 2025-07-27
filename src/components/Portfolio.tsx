@@ -9,11 +9,10 @@ export const Portfolio = () => {
       title: "Data Science",
       projects: [
         {
-          title: "Captivating Work Vista",
-          description: "Advanced data analytics and visualization project showcasing machine learning capabilities",
+          title: "Coming Soon",
+          description: "Advanced data analytics and visualization projects showcasing machine learning capabilities",
           technologies: ["Python", "Machine Learning", "Data Analytics", "Visualization"],
-          githubUrl: "https://github.com/MahamadYoussoufDjibrine/captivating-work-vista",
-          type: "github"
+          type: "placeholder"
         }
       ]
     },
