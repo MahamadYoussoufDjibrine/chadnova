@@ -5,25 +5,25 @@ import { Linkedin, Twitter, Mail } from "lucide-react";
 export const About = () => {
   const founders = [
     {
-      name: "Moussa Mahamat Nassour",
+      name: "Daoud Abdelkerim Adam",
       role: "CEO & Co-Founder",
+      expertise: "Education & Skill Development & Data Science",
+      background: "Visionary leader focused on building technical capacity and driving innovation. Leads partnerships and strategic vision while delivering comprehensive training programs.",
+      skills: ["Leadership", "Vision & Strategy", "Training Design", "Curriculum Development", "Data Science", "Machine Learning", "Cloud Computing"]
+    },
+    {
+      name: "Moussa Mahamat Nassour",
+      role: "CTO & Co-Founder",
       expertise: "Business Strategy & Web Development",
-      background: "Experienced entrepreneur with a passion for digital transformation in Africa. Leads strategic initiatives and business development.",
-      skills: ["Leadership", "Strategy", "Full-Stack Development", "Business Development"]
+      background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
+      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development"]
     },
     {
       name: "Mahamat Youssouf Djibrine",
-      role: "CTO & Co-Founder",
+      role: "COO & Co-Founder",
       expertise: "Software Engineering & Data Science",
-      background: "Technical visionary specializing in scalable software solutions and data analytics. Drives innovation and technical excellence.",
-      skills: ["Software Architecture", "Data Science", "Machine Learning", "Cloud Computing"]
-    },
-    {
-      name: "Daoud Abdelkerim Adam",
-      role: "Head of Training & Co-Founder",
-      expertise: "Education & Skill Development",
-      background: "Passionate educator focused on building technical capacity across Chad. Designs and delivers comprehensive training programs.",
-      skills: ["Training Design", "Curriculum Development", "Mentorship", "Technical Education", "Data Science", "Machine Learning", "Cloud Computing"]
+      background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
+      skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"]
     }
   ];
 
