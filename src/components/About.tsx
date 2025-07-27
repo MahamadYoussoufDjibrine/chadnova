@@ -9,21 +9,24 @@ export const About = () => {
       role: "CEO & Co-Founder",
       expertise: "Education & Skill Development & Data Science",
       background: "Visionary leader focused on building technical capacity and driving innovation. Leads partnerships and strategic vision while delivering comprehensive training programs.",
-      skills: ["Leadership", "Vision & Strategy", "Training Design", "Curriculum Development", "Data Science", "Machine Learning", "Cloud Computing"]
+      skills: ["Leadership", "Vision & Strategy", "Training Design", "Curriculum Development", "Data Science", "Machine Learning", "Cloud Computing"],
+      image: "/lovable-uploads/dd097fc8-28df-466b-8137-013a251941fd.png"
     },
     {
       name: "Moussa Mahamat Nassour",
       role: "CTO & Co-Founder",
       expertise: "Business Strategy & Web Development",
       background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
-      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development"]
+      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development"],
+      image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png"
     },
     {
       name: "Mahamat Youssouf Djibrine",
       role: "COO & Co-Founder",
       expertise: "Software Engineering & Data Science",
       background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
-      skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"]
+      skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"],
+      image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png"
     }
   ];
 
@@ -43,8 +46,12 @@ export const About = () => {
           {founders.map((founder, index) => (
             <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50">
               <CardHeader className="text-center pb-4">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-primary rounded-full flex items-center justify-center text-4xl font-bold text-primary-foreground">
-                  {founder.name.split(' ').map(n => n[0]).join('')}
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-primary/20">
+                  <img 
+                    src={founder.image} 
+                    alt={`${founder.name} - ${founder.role}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors duration-300">
                   {founder.name}
