@@ -22,7 +22,7 @@ export const Navigation = () => {
           <div className="flex items-center space-x-2">
             <Code2 className="w-8 h-8 text-primary" />
             <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              TchadNova
+              ChadNova
             </span>
           </div>
 

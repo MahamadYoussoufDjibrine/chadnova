@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Code2 className="w-8 h-8" />
-              <span className="text-2xl font-bold">TchadNova</span>
+              <span className="text-2xl font-bold">ChadNova</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Transforming Chad through technology and innovation. 
@@ -58,7 +58,7 @@ export const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" />
-                <span>contact@tchadnova.com</span>
+                <span>contact@chadnova.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" />
@@ -73,7 +73,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 mt-12 text-center text-primary-foreground/60">
-          <p>&copy; 2024 TchadNova. All rights reserved. Built with ❤️ in Rwanda.</p>
+          <p>&copy; 2024 ChadNova. All rights reserved. Built with ❤️ in Rwanda.</p>
         </div>
       </div>
     </footer>

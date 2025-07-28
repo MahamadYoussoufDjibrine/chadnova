@@ -105,7 +105,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email Us</h4>
-                  <p className="text-muted-foreground">contact@tchadnova.com</p>
+                  <p className="text-muted-foreground">contact@chadnova.com</p>
                 </div>
               </div>
 
