@@ -20,10 +20,24 @@ export const Portfolio = () => {
       title: "Software Development",
       projects: [
         {
-          title: "Developer Portfolio",
-          description: "Comprehensive portfolio showcasing full-stack development skills and projects",
-          technologies: ["React", "JavaScript", "Web Development", "UI/UX"],
-          liveUrl: "https://moussassoss.github.io/portfolio/",
+          title: "E-Chad Platform",
+          description: "Digital governance platform for Chad with modern web technologies",
+          technologies: ["React", "JavaScript", "Web Development", "Government Solutions"],
+          liveUrl: "https://etchad.netlify.app/",
+          type: "live"
+        },
+        {
+          title: "Twubake Bakery",
+          description: "Modern e-commerce platform for bakery services and online ordering",
+          technologies: ["React", "E-commerce", "Payment Integration", "Food Services"],
+          liveUrl: "https://twubake.com/",
+          type: "live"
+        },
+        {
+          title: "Food Bank Management System",
+          description: "Comprehensive system for managing food distribution and inventory tracking",
+          technologies: ["React", "Database Management", "Inventory System", "Social Impact"],
+          liveUrl: "https://foodbanksystem.netlify.app/",
           type: "live"
         }
       ]
