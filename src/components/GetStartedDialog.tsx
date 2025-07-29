@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 interface GetStartedDialogProps {
   children: React.ReactNode;
@@ -24,7 +25,7 @@ export const GetStartedDialog = ({ children }: GetStartedDialogProps) => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -37,25 +38,69 @@ export const GetStartedDialog = ({ children }: GetStartedDialogProps) => {
       return;
     }
 
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Request Submitted!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    try {
+      // Save to database
+      const { error: dbError } = await supabase
+        .from('get_started_requests')
+        .insert([{
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || null,
+          service: formData.service,
+          budget: formData.budget || null,
+          timeline: formData.timeline || null,
+          description: formData.description
+        }]);
 
-    // Reset form and close dialog
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      service: "",
-      budget: "",
-      timeline: "",
-      description: ""
-    });
-    setOpen(false);
+      if (dbError) {
+        throw dbError;
+      }
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          firstName: formData.name,
+          lastName: "",
+          email: formData.email,
+          company: formData.company || "Not specified",
+          service: formData.service,
+          message: `Get Started Request:
+Budget: ${formData.budget || "Not specified"}
+Timeline: ${formData.timeline || "Not specified"}
+Description: ${formData.description}`
+        }
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+        // Don't fail the whole process if email fails
+      }
+
+      toast({
+        title: "Request Submitted!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form and close dialog
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        service: "",
+        budget: "",
+        timeline: "",
+        description: ""
+      });
+      setOpen(false);
+
+    } catch (error) {
+      console.error('Error submitting request:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your request. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
