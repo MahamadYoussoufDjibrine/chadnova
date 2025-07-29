@@ -9,10 +9,11 @@ export const Portfolio = () => {
       title: "Data Science",
       projects: [
         {
-          title: "Coming Soon",
-          description: "Advanced data analytics and visualization projects showcasing machine learning capabilities",
-          technologies: ["Python", "Machine Learning", "Data Analytics", "Visualization"],
-          type: "placeholder"
+          title: "Smart Farming Insights",
+          description: "AI-powered agricultural platform providing personalized crop recommendations using real-time climate analysis and satellite imagery",
+          technologies: ["AI", "Machine Learning", "Climate Analysis", "Satellite Mapping", "Agricultural Tech"],
+          liveUrl: "https://tinyurl.com/pwf8jyw7",
+          type: "live"
         }
       ]
     },
