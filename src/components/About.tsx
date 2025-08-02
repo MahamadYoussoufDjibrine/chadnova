@@ -5,14 +5,6 @@ import { Linkedin, Twitter, Mail } from "lucide-react";
 export const About = () => {
   const founders = [
     {
-      name: "Daoud Abdelkerim Adam",
-      role: "CEO & Co-Founder",
-      expertise: "Education & Skill Development & Data Science",
-      background: "Visionary leader focused on building technical capacity and driving innovation. Leads partnerships and strategic vision while delivering comprehensive training programs.",
-      skills: ["Leadership", "Vision & Strategy", "Training Design", "Curriculum Development", "Data Science", "Machine Learning", "Cloud Computing"],
-      image: "/lovable-uploads/dd097fc8-28df-466b-8137-013a251941fd.png"
-    },
-    {
       name: "Moussa Mahamat Nassour",
       role: "CTO & Co-Founder",
       expertise: "Business Strategy & Web Development",
@@ -27,6 +19,14 @@ export const About = () => {
       background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
       skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"],
       image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png"
+    },
+    {
+      name: "Daoud Abdelkerim Adam",
+      role: "CEO & Co-Founder",
+      expertise: "Education & Skill Development & Data Science",
+      background: "Visionary leader focused on building technical capacity and driving innovation. Leads partnerships and strategic vision while delivering comprehensive training programs.",
+      skills: ["Leadership", "Vision & Strategy", "Data Science", "Machine Learning", "Cloud Computing"],
+      image: "/lovable-uploads/dd097fc8-28df-466b-8137-013a251941fd.png"
     }
   ];
 
