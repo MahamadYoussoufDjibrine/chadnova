@@ -9,7 +9,7 @@ export const About = () => {
       role: "CTO & Co-Founder",
       expertise: "Fullstack Developer & Software Engineer",
       background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
-      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development", "AI/ML", "IoT"],
+      skills: ["Technical Leadership", "Full-Stack Development", "Software Architecture", "Business Development", "AI/ML", "IoT"],
       image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png",
       linkedin: "https://www.linkedin.com/in/moussa-mahamat-nassour-405104264/"
     },
