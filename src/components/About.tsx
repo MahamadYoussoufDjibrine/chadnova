@@ -10,7 +10,8 @@ export const About = () => {
       expertise: "Fullstack Developer & Software Engineer",
       background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
       skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development"],
-      image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png"
+      image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png",
+      linkedin: "https://www.linkedin.com/in/moussa-mahamat-nassour-405104264/"
     },
     {
       name: "Mahamat Youssouf Djibrine",
@@ -18,7 +19,8 @@ export const About = () => {
       expertise: "Software Engineer & Frontend Developer",
       background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
       skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"],
-      image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png"
+      image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png",
+      linkedin: "https://www.linkedin.com/in/mahamat-youssouf-djibrine-336166276/"
     },
     {
       name: "Daoud Abdelkerim Adam",
@@ -26,7 +28,8 @@ export const About = () => {
       expertise: "Data Scientist",
       background: "Visionary leader focused on building technical capacity and driving innovation. Leads partnerships and strategic vision while delivering comprehensive training programs.",
       skills: ["Leadership", "Vision & Strategy", "Data Science", "Machine Learning", "Cloud Computing"],
-      image: "/lovable-uploads/dd097fc8-28df-466b-8137-013a251941fd.png"
+      image: "/lovable-uploads/dd097fc8-28df-466b-8137-013a251941fd.png",
+      linkedin: "https://www.linkedin.com/in/daoud-abdelkerim-adam-4b5777371/"
     }
   ];
 
@@ -75,9 +78,14 @@ export const About = () => {
                   ))}
                 </div>
                 <div className="flex justify-center space-x-3">
-                  <div className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-pointer">
+                  <a 
+                    href={founder.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-pointer"
+                  >
                     <Linkedin className="w-4 h-4" />
-                  </div>
+                  </a>
                   <div className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-pointer">
                     <Twitter className="w-4 h-4" />
                   </div>
