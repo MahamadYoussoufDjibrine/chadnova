@@ -9,7 +9,7 @@ export const About = () => {
       role: "CTO & Co-Founder",
       expertise: "Fullstack Developer & Software Engineer",
       background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
-      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development"],
+      skills: ["Technical Leadership", "Strategy", "Full-Stack Development", "Software Architecture", "Business Development", "AI/ML", "IoT"],
       image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png",
       linkedin: "https://www.linkedin.com/in/moussa-mahamat-nassour-405104264/"
     },
@@ -18,7 +18,7 @@ export const About = () => {
       role: "COO & Co-Founder",
       expertise: "Software Engineer & Frontend Developer",
       background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
-      skills: ["Operations Management", "Client Success", "Software Engineering", "Data Science", "Machine Learning", "Project Management"],
+      skills: ["Operations Management", "Client Success", "Software Engineering", "Project Management", "AI/ML", "IoT"],
       image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png",
       linkedin: "https://www.linkedin.com/in/mahamat-youssouf-djibrine-336166276/"
     },
