@@ -30,7 +30,7 @@ export const Navigation = () => {
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 ChadNova
               </span>
-              <span className="text-xs text-muted-foreground font-medium">
+              <span className="text-xs text-white font-medium">
                 Think Smart. Build Fast. Lead First.
               </span>
             </div>
@@ -44,7 +44,7 @@ export const Navigation = () => {
                 variant="ghost"
                 size="sm"
                 asChild
-                className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 font-medium"
+                className="text-white hover:text-primary hover:bg-primary/10 transition-all duration-300 font-medium"
               >
                 <a href={item.href}>
                   {item.label}
@@ -60,7 +60,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -77,7 +77,7 @@ export const Navigation = () => {
                   variant="ghost"
                   size="sm"
                   asChild
-                  className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 font-medium justify-start"
+                  className="text-white hover:text-primary hover:bg-primary/10 transition-all duration-300 font-medium justify-start"
                   onClick={() => setIsOpen(false)}
                 >
                   <a href={item.href}>
