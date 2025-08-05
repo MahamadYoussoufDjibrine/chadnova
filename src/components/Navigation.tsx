@@ -24,7 +24,7 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/787774af-8c7e-48b9-8103-f9daa7a10cf4.png" 
               alt="ChadNova Logo" 
-              className="w-14 h-14 rounded-full object-cover aspect-square"
+              className="w-12 h-12 rounded-full object-cover aspect-square"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
