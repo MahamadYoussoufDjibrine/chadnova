@@ -7,7 +7,7 @@ export const About = () => {
     {
       name: "Moussa Mahamat Nassour",
       role: "CTO & Co-Founder",
-      expertise: "Fullstack Developer & Software Engineer",
+      expertise: "Software Engineer",
       background: "Technical leader overseeing software development and technical strategy. Experienced entrepreneur with expertise in full-stack development and business strategy.",
       skills: ["Technical Leadership", "Full-Stack Development", "Software Architecture", "Business Development", "AI/ML", "IoT"],
       image: "/lovable-uploads/a983fb6d-b643-4283-8571-f3b1a788b567.png",
@@ -16,7 +16,7 @@ export const About = () => {
     {
       name: "Mahamat Youssouf Djibrine",
       role: "COO & Co-Founder",
-      expertise: "Software Engineer & Frontend Developer",
+      expertise: "Software Engineer",
       background: "Operations leader managing logistics, client success, and technical excellence. Specializes in scalable software solutions and data analytics implementation.",
       skills: ["Operations Management", "Client Success", "Software Engineering", "Project Management", "AI/ML", "IoT"],
       image: "/lovable-uploads/41dc9b8c-498c-4cd5-850b-f5b13e945ada.png",
