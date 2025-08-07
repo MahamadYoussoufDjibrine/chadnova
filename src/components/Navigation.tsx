@@ -31,7 +31,7 @@ export const Navigation = () => {
                 ChadNova
               </span>
               <span className="text-xs text-white font-medium">
-                Think Smart. Build Fast. Lead First.
+                New pathways we find, leaving no one behind
               </span>
             </div>
           </div>
