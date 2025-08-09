@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "title": "Construire des Solutions Numériques pour l'Avenir du Tchad",
+    "subtitle": "Autonomiser les communautés grâce à la technologie innovante, la science des données et les solutions de développement durable.",
+    "ctaLearnMore": "En Savoir Plus",
+    "ctaGetStarted": "Commencer"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions technologiques complètes adaptées aux défis et opportunités uniques du Tchad",
+    "dataScience": {
+      "title": "Science des Données & IA",
+      "description": "Solutions d'analyse avancées et d'apprentissage automatique pour les insights agricoles, l'analyse climatique et l'intelligence d'affaires."
+    },
+    "softwareDev": {
+      "title": "Développement Logiciel",
+      "description": "Applications web et mobiles personnalisées conçues pour rationaliser les opérations et améliorer la présence numérique."
+    },
+    "digitalGov": {
+      "title": "Gouvernance Numérique",
+      "description": "Solutions d'e-gouvernement qui améliorent les services aux citoyens et l'efficacité administrative à travers le Tchad."
+    },
+    "cloudSolutions": {
+      "title": "Solutions Cloud",
+      "description": "Infrastructure cloud évolutive et services pour soutenir les entreprises et organisations en croissance."
+    },
+    "cybersecurity": {
+      "title": "Cybersécurité",
+      "description": "Solutions de sécurité complètes pour protéger les actifs numériques et assurer la confidentialité des données."
+    },
+    "consulting": {
+      "title": "Conseil en Technologie",
+      "description": "Orientation stratégique et expertise technique pour conduire les initiatives de transformation numérique."
+    }
+  },
+  "about": {
+    "title": "À Propos de ChadNova",
+    "subtitle": "Leader de la transformation numérique du Tchad avec des solutions innovantes",
+    "description": "Chez ChadNova, nous sommes passionnés par l'utilisation de la technologie pour résoudre des problèmes réels au Tchad. Notre équipe combine l'expertise locale avec les meilleures pratiques mondiales pour fournir des solutions qui ont un impact significatif.",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Combler le fossé numérique au Tchad en fournissant des solutions technologiques accessibles et innovantes qui autonomisent les communautés et favorisent le développement durable."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Devenir le partenaire technologique leader du Tchad, favorisant l'alphabétisation numérique et la croissance économique grâce à des solutions de pointe."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "description": "Innovation, durabilité, autonomisation communautaire et excellence dans tout ce que nous faisons."
+    }
+  },
+  "portfolio": {
+    "title": "Notre Portfolio",
+    "subtitle": "Explorez nos derniers projets et histoires de succès dans différents domaines technologiques",
+    "categories": {
+      "dataScience": {
+        "title": "Science des Données",
+        "description": "Solutions alimentées par l'IA et applications d'apprentissage automatique pour les insights agricoles et commerciaux",
+        "count": "1 Projet"
+      },
+      "softwareDev": {
+        "title": "Développement Logiciel",
+        "description": "Applications web modernes et plateformes numériques pour les solutions gouvernementales et commerciales",
+        "count": "3 Projets"
+      },
+      "mobileApps": {
+        "title": "Applications Mobiles",
+        "description": "Solutions mobiles multiplateformes pour les agriculteurs et commerçants au Tchad",
+        "count": "Bientôt Disponible"
+      },
+      "ecommerce": {
+        "title": "Solutions E-commerce",
+        "description": "Solutions de marketplace numérique pour les entreprises locales et le commerce en ligne",
+        "count": "Bientôt Disponible"
+      }
+    },
+    "viewGallery": "Voir la Galerie",
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "description": "Contactez-nous pour discuter de la façon dont nous pouvons donner vie à vos idées avec des solutions technologiques de pointe.",
+      "button": "Nous Contacter"
+    }
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "subtitle": "Prêt à transformer vos idées en réalité ? Discutons de votre projet.",
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse"
+    },
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message"
+    }
+  },
+  "footer": {
+    "description": "Autonomiser le Tchad grâce à des solutions technologiques innovantes et la transformation numérique.",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "contact": "Info Contact",
+    "followUs": "Suivez-Nous",
+    "rights": "Tous droits réservés.",
+    "slogan": "De nouveaux chemins nous trouvons, ne laissant personne derrière"
+  },
+  "gallery": {
+    "backToPortfolio": "Retour au Portfolio",
+    "viewLive": "Voir en Direct",
+    "comingSoon": "Bientôt Disponible",
+    "dataScience": {
+      "title": "Projets de Science des Données",
+      "subtitle": "Explorez nos solutions alimentées par l'IA et applications d'apprentissage automatique pour les insights agricoles et commerciaux"
+    },
+    "softwareDev": {
+      "title": "Projets de Développement Logiciel",
+      "subtitle": "Applications web modernes et plateformes numériques pour les solutions gouvernementales et commerciales"
+    },
+    "mobileApps": {
+      "title": "Applications Mobiles",
+      "subtitle": "Solutions mobiles multiplateformes pour les agriculteurs et commerçants au Tchad",
+      "ctaTitle": "Solutions Mobiles en Développement",
+      "ctaDescription": "Nous travaillons sur des applications mobiles innovantes adaptées aux secteurs agricoles et commerciaux du Tchad. Restez à l'écoute pour des mises à jour passionnantes !",
+      "ctaButton": "Être Notifié"
+    },
+    "ecommerce": {
+      "title": "Solutions E-commerce",
+      "subtitle": "Solutions de marketplace numérique pour les entreprises locales et le commerce en ligne",
+      "ctaTitle": "Plateformes E-commerce Bientôt Disponibles",
+      "ctaDescription": "Nous développons des solutions e-commerce complètes pour autonomiser les entreprises locales et créer des marketplaces numériques pour l'économie du Tchad.",
+      "ctaButton": "Rejoindre la Liste d'Attente"
+    }
+  },
+  "projects": {
+    "smartFarming": {
+      "title": "Insights Agriculture Intelligente",
+      "description": "Plateforme agricole alimentée par l'IA fournissant des recommandations de cultures personnalisées utilisant l'analyse climatique en temps réel et l'imagerie satellite"
+    },
+    "eChad": {
+      "title": "Plateforme E-Chad",
+      "description": "Plateforme de gouvernance numérique pour le Tchad avec des technologies web modernes"
+    },
+    "twubake": {
+      "title": "Boulangerie Twubake",
+      "description": "Plateforme e-commerce moderne pour les services de boulangerie et les commandes en ligne"
+    },
+    "foodBank": {
+      "title": "Système de Gestion de Banque Alimentaire",
+      "description": "Système complet pour gérer la distribution alimentaire et le suivi des stocks"
+    },
+    "mobileComingSoon": {
+      "title": "Bientôt Disponible",
+      "description": "Solutions mobiles innovantes pour les agriculteurs et commerçants au Tchad"
+    },
+    "ecommerceComingSoon": {
+      "title": "Bientôt Disponible",
+      "description": "Solutions de marketplace numérique pour les entreprises locales et commerçants"
+    }
+  }
+}

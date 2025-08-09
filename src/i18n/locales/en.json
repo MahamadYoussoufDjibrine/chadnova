@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Building Digital Solutions for Chad's Future",
+    "subtitle": "Empowering communities through innovative technology, data science, and sustainable development solutions.",
+    "ctaLearnMore": "Learn More",
+    "ctaGetStarted": "Get Started"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive technology solutions tailored for Chad's unique challenges and opportunities",
+    "dataScience": {
+      "title": "Data Science & AI",
+      "description": "Advanced analytics and machine learning solutions for agricultural insights, climate analysis, and business intelligence."
+    },
+    "softwareDev": {
+      "title": "Software Development",
+      "description": "Custom web and mobile applications designed to streamline operations and enhance digital presence."
+    },
+    "digitalGov": {
+      "title": "Digital Governance",
+      "description": "E-government solutions that improve citizen services and administrative efficiency across Chad."
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "description": "Scalable cloud infrastructure and services to support growing businesses and organizations."
+    },
+    "cybersecurity": {
+      "title": "Cybersecurity",
+      "description": "Comprehensive security solutions to protect digital assets and ensure data privacy."
+    },
+    "consulting": {
+      "title": "Technology Consulting",
+      "description": "Strategic guidance and technical expertise to drive digital transformation initiatives."
+    }
+  },
+  "about": {
+    "title": "About ChadNova",
+    "subtitle": "Leading Chad's digital transformation with innovative solutions",
+    "description": "At ChadNova, we are passionate about leveraging technology to solve real-world problems in Chad. Our team combines local expertise with global best practices to deliver solutions that make a meaningful impact.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To bridge the digital divide in Chad by providing accessible, innovative technology solutions that empower communities and drive sustainable development."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become Chad's leading technology partner, fostering digital literacy and economic growth through cutting-edge solutions."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Innovation, sustainability, community empowerment, and excellence in everything we do."
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Explore our latest projects and success stories across different technology domains",
+    "categories": {
+      "dataScience": {
+        "title": "Data Science",
+        "description": "AI-powered solutions and machine learning applications for agricultural and business insights",
+        "count": "1 Project"
+      },
+      "softwareDev": {
+        "title": "Software Development", 
+        "description": "Modern web applications and digital platforms for government and business solutions",
+        "count": "3 Projects"
+      },
+      "mobileApps": {
+        "title": "Mobile Applications",
+        "description": "Cross-platform mobile solutions for farmers and traders in Chad",
+        "count": "Coming Soon"
+      },
+      "ecommerce": {
+        "title": "E-commerce Solutions",
+        "description": "Digital marketplace solutions for local businesses and online commerce",
+        "count": "Coming Soon"
+      }
+    },
+    "viewGallery": "View Gallery",
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Contact us to discuss how we can bring your ideas to life with cutting-edge technology solutions.",
+      "button": "Get In Touch"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your ideas into reality? Let's discuss your project.",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Empowering Chad through innovative technology solutions and digital transformation.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "slogan": "New pathways we find, leaving no one behind"
+  },
+  "gallery": {
+    "backToPortfolio": "Back to Portfolio",
+    "viewLive": "View Live",
+    "comingSoon": "Coming Soon",
+    "dataScience": {
+      "title": "Data Science Projects",
+      "subtitle": "Explore our AI-powered solutions and machine learning applications for agricultural and business insights"
+    },
+    "softwareDev": {
+      "title": "Software Development Projects", 
+      "subtitle": "Modern web applications and digital platforms for government and business solutions"
+    },
+    "mobileApps": {
+      "title": "Mobile Applications",
+      "subtitle": "Cross-platform mobile solutions for farmers and traders in Chad",
+      "ctaTitle": "Mobile Solutions in Development",
+      "ctaDescription": "We're working on innovative mobile applications tailored for Chad's agricultural and business sectors. Stay tuned for exciting updates!",
+      "ctaButton": "Get Notified"
+    },
+    "ecommerce": {
+      "title": "E-commerce Solutions",
+      "subtitle": "Digital marketplace solutions for local businesses and online commerce",
+      "ctaTitle": "E-commerce Platforms Coming Soon",
+      "ctaDescription": "We're developing comprehensive e-commerce solutions to empower local businesses and create digital marketplaces for Chad's economy.",
+      "ctaButton": "Join Waitlist"
+    }
+  },
+  "projects": {
+    "smartFarming": {
+      "title": "Smart Farming Insights",
+      "description": "AI-powered agricultural platform providing personalized crop recommendations using real-time climate analysis and satellite imagery"
+    },
+    "eChad": {
+      "title": "E-Chad Platform",
+      "description": "Digital governance platform for Chad with modern web technologies"
+    },
+    "twubake": {
+      "title": "Twubake Bakery",
+      "description": "Modern e-commerce platform for bakery services and online ordering"
+    },
+    "foodBank": {
+      "title": "Food Bank Management System",
+      "description": "Comprehensive system for managing food distribution and inventory tracking"
+    },
+    "mobileComingSoon": {
+      "title": "Coming Soon",
+      "description": "Innovative mobile solutions for farmers and traders in Chad"
+    },
+    "ecommerceComingSoon": {
+      "title": "Coming Soon", 
+      "description": "Digital marketplace solutions for local businesses and traders"
+    }
+  }
+}

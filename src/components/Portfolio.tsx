@@ -2,38 +2,40 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Database, Code2, Smartphone, ShoppingCart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Portfolio = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const portfolioCategories = [
     {
-      title: "Data Science",
-      description: "AI-powered solutions and machine learning applications for agricultural and business insights",
+      title: t('portfolio.categories.dataScience.title'),
+      description: t('portfolio.categories.dataScience.description'),
       icon: Database,
       path: "/portfolio/data-science",
-      count: "1 Project"
+      count: t('portfolio.categories.dataScience.count')
     },
     {
-      title: "Software Development",
-      description: "Modern web applications and digital platforms for government and business solutions",
+      title: t('portfolio.categories.softwareDev.title'),
+      description: t('portfolio.categories.softwareDev.description'),
       icon: Code2,
       path: "/portfolio/software-development",
-      count: "3 Projects"
+      count: t('portfolio.categories.softwareDev.count')
     },
     {
-      title: "Mobile Applications",
-      description: "Cross-platform mobile solutions for farmers and traders in Chad",
+      title: t('portfolio.categories.mobileApps.title'),
+      description: t('portfolio.categories.mobileApps.description'),
       icon: Smartphone,
       path: "/portfolio/mobile-apps",
-      count: "Coming Soon"
+      count: t('portfolio.categories.mobileApps.count')
     },
     {
-      title: "E-commerce Solutions",
-      description: "Digital marketplace solutions for local businesses and online commerce",
+      title: t('portfolio.categories.ecommerce.title'),
+      description: t('portfolio.categories.ecommerce.description'),
       icon: ShoppingCart,
       path: "/portfolio/e-commerce",
-      count: "Coming Soon"
+      count: t('portfolio.categories.ecommerce.count')
     }
   ];
 
@@ -42,10 +44,10 @@ export const Portfolio = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Portfolio</span>
+            {t('portfolio.title').split(' ')[0]} <span className="bg-gradient-primary bg-clip-text text-transparent">{t('portfolio.title').split(' ')[1]}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our latest projects and success stories across different technology domains
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
@@ -78,7 +80,7 @@ export const Portfolio = () => {
                     size="sm" 
                     className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
                   >
-                    View Gallery
+                    {t('portfolio.viewGallery')}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </CardContent>
@@ -89,16 +91,16 @@ export const Portfolio = () => {
         
         <div className="text-center mt-16">
           <div className="bg-gradient-hero p-8 rounded-2xl text-primary-foreground">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">{t('portfolio.cta.title')}</h3>
             <p className="text-lg leading-relaxed max-w-2xl mx-auto mb-6">
-              Contact us to discuss how we can bring your ideas to life with cutting-edge technology solutions.
+              {t('portfolio.cta.description')}
             </p>
             <Button 
               variant="secondary" 
               size="lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Get In Touch
+              {t('portfolio.cta.button')}
             </Button>
           </div>
         </div>

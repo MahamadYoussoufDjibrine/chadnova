@@ -1,18 +1,21 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { GetStartedDialog } from "@/components/GetStartedDialog";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "About Us", href: "#about" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Contact", href: "#contact" },
+    { label: t('nav.home'), href: "#home" },
+    { label: t('nav.services'), href: "#services" },
+    { label: t('nav.about'), href: "#about" },
+    { label: t('nav.portfolio'), href: "#portfolio" },
+    { label: t('nav.contact'), href: "#contact" },
   ];
 
   return (
@@ -31,7 +34,7 @@ export const Navigation = () => {
                 ChadNova
               </span>
               <span className="text-xs text-white font-medium">
-                New pathways we find, leaving no one behind
+                {t('footer.slogan')}
               </span>
             </div>
           </div>
@@ -51,9 +54,10 @@ export const Navigation = () => {
                 </a>
               </Button>
             ))}
+            <LanguageSwitcher />
             <GetStartedDialog>
               <Button variant="hero" size="sm">
-                Get Started
+                {t('nav.getStarted')}
               </Button>
             </GetStartedDialog>
           </div>
@@ -85,9 +89,10 @@ export const Navigation = () => {
                   </a>
                 </Button>
               ))}
+              <LanguageSwitcher />
               <GetStartedDialog>
                 <Button variant="hero" size="sm" className="w-fit mt-2">
-                  Get Started
+                  {t('nav.getStarted')}
                 </Button>
               </GetStartedDialog>
             </div>

@@ -5,14 +5,16 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const DataScienceGallery = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: "Smart Farming Insights",
-      description: "AI-powered agricultural platform providing personalized crop recommendations using real-time climate analysis and satellite imagery",
+      title: t('projects.smartFarming.title'),
+      description: t('projects.smartFarming.description'),
       technologies: ["AI", "Machine Learning", "Climate Analysis", "Satellite Mapping", "Agricultural Tech"],
       liveUrl: "https://tinyurl.com/pwf8jyw7",
       type: "live"
@@ -32,16 +34,16 @@ const DataScienceGallery = () => {
                 className="mb-4 text-muted-foreground hover:text-foreground"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Portfolio
+                {t('gallery.backToPortfolio')}
               </Button>
             </div>
 
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Data <span className="bg-gradient-primary bg-clip-text text-transparent">Science</span> Projects
+                {t('gallery.dataScience.title').split(' ')[0]} <span className="bg-gradient-primary bg-clip-text text-transparent">{t('gallery.dataScience.title').split(' ').slice(1).join(' ')}</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Explore our AI-powered solutions and machine learning applications for agricultural and business insights
+                {t('gallery.dataScience.subtitle')}
               </p>
             </div>
 
@@ -74,7 +76,7 @@ const DataScienceGallery = () => {
                           onClick={() => window.open(project.liveUrl, '_blank')}
                         >
                           <ExternalLink className="w-4 h-4" />
-                          View Live
+                          {t('gallery.viewLive')}
                         </Button>
                       )}
                     </div>

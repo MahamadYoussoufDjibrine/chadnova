@@ -5,14 +5,16 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const EcommerceGallery = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: "Coming Soon",
-      description: "Digital marketplace solutions for local businesses and traders",
+      title: t('projects.ecommerceComingSoon.title'),
+      description: t('projects.ecommerceComingSoon.description'),
       technologies: ["E-commerce", "Payment Integration", "Inventory Management"],
       type: "placeholder"
     }
@@ -31,16 +33,16 @@ const EcommerceGallery = () => {
                 className="mb-4 text-muted-foreground hover:text-foreground"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Portfolio
+                {t('gallery.backToPortfolio')}
               </Button>
             </div>
 
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                E-commerce <span className="bg-gradient-primary bg-clip-text text-transparent">Solutions</span>
+                {t('gallery.ecommerce.title').split(' ')[0]} <span className="bg-gradient-primary bg-clip-text text-transparent">{t('gallery.ecommerce.title').split(' ').slice(1).join(' ')}</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Digital marketplace solutions for local businesses and online commerce
+                {t('gallery.ecommerce.subtitle')}
               </p>
             </div>
 
@@ -66,7 +68,7 @@ const EcommerceGallery = () => {
                     
                     <div className="flex gap-3">
                       <Button variant="secondary" size="sm" disabled>
-                        Coming Soon
+                        {t('gallery.comingSoon')}
                       </Button>
                     </div>
                   </CardContent>
@@ -76,16 +78,16 @@ const EcommerceGallery = () => {
 
             <div className="text-center mt-16">
               <div className="bg-gradient-hero p-8 rounded-2xl text-primary-foreground max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold mb-4">E-commerce Platforms Coming Soon</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('gallery.ecommerce.ctaTitle')}</h3>
                 <p className="text-lg leading-relaxed mb-6">
-                  We're developing comprehensive e-commerce solutions to empower local businesses and create digital marketplaces for Chad's economy.
+                  {t('gallery.ecommerce.ctaDescription')}
                 </p>
                 <Button 
                   variant="secondary" 
                   size="lg"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Join Waitlist
+                  {t('gallery.ecommerce.ctaButton')}
                 </Button>
               </div>
             </div>

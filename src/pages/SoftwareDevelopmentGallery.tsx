@@ -5,28 +5,30 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const SoftwareDevelopmentGallery = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: "E-Chad Platform",
-      description: "Digital governance platform for Chad with modern web technologies",
+      title: t('projects.eChad.title'),
+      description: t('projects.eChad.description'),
       technologies: ["React", "JavaScript", "Web Development", "Government Solutions"],
       liveUrl: "https://etchad.netlify.app/",
       type: "live"
     },
     {
-      title: "Twubake Bakery",
-      description: "Modern e-commerce platform for bakery services and online ordering",
+      title: t('projects.twubake.title'),
+      description: t('projects.twubake.description'),
       technologies: ["React", "E-commerce", "Payment Integration", "Food Services"],
       liveUrl: "https://twubake.com/",
       type: "live"
     },
     {
-      title: "Food Bank Management System",
-      description: "Comprehensive system for managing food distribution and inventory tracking",
+      title: t('projects.foodBank.title'),
+      description: t('projects.foodBank.description'),
       technologies: ["React", "Database Management", "Inventory System", "Social Impact"],
       liveUrl: "https://foodbanksystem.netlify.app/",
       type: "live"
@@ -46,16 +48,16 @@ const SoftwareDevelopmentGallery = () => {
                 className="mb-4 text-muted-foreground hover:text-foreground"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Portfolio
+                {t('gallery.backToPortfolio')}
               </Button>
             </div>
 
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Software <span className="bg-gradient-primary bg-clip-text text-transparent">Development</span> Projects
+                {t('gallery.softwareDev.title').split(' ')[0]} <span className="bg-gradient-primary bg-clip-text text-transparent">{t('gallery.softwareDev.title').split(' ').slice(1).join(' ')}</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Modern web applications and digital platforms for government and business solutions
+                {t('gallery.softwareDev.subtitle')}
               </p>
             </div>
 
@@ -88,7 +90,7 @@ const SoftwareDevelopmentGallery = () => {
                           onClick={() => window.open(project.liveUrl, '_blank')}
                         >
                           <ExternalLink className="w-4 h-4" />
-                          View Live
+                          {t('gallery.viewLive')}
                         </Button>
                       )}
                     </div>

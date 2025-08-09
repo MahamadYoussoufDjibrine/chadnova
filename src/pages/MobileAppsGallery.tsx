@@ -5,14 +5,16 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const MobileAppsGallery = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: "Coming Soon",
-      description: "Innovative mobile solutions for farmers and traders in Chad",
+      title: t('projects.mobileComingSoon.title'),
+      description: t('projects.mobileComingSoon.description'),
       technologies: ["React Native", "Mobile Development", "Cross-Platform"],
       type: "placeholder"
     }
@@ -31,16 +33,16 @@ const MobileAppsGallery = () => {
                 className="mb-4 text-muted-foreground hover:text-foreground"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Portfolio
+                {t('gallery.backToPortfolio')}
               </Button>
             </div>
 
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Mobile <span className="bg-gradient-primary bg-clip-text text-transparent">Applications</span>
+                {t('gallery.mobileApps.title').split(' ')[0]} <span className="bg-gradient-primary bg-clip-text text-transparent">{t('gallery.mobileApps.title').split(' ').slice(1).join(' ')}</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Cross-platform mobile solutions for farmers and traders in Chad
+                {t('gallery.mobileApps.subtitle')}
               </p>
             </div>
 
@@ -66,7 +68,7 @@ const MobileAppsGallery = () => {
                     
                     <div className="flex gap-3">
                       <Button variant="secondary" size="sm" disabled>
-                        Coming Soon
+                        {t('gallery.comingSoon')}
                       </Button>
                     </div>
                   </CardContent>
@@ -76,16 +78,16 @@ const MobileAppsGallery = () => {
 
             <div className="text-center mt-16">
               <div className="bg-gradient-hero p-8 rounded-2xl text-primary-foreground max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold mb-4">Mobile Solutions in Development</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('gallery.mobileApps.ctaTitle')}</h3>
                 <p className="text-lg leading-relaxed mb-6">
-                  We're working on innovative mobile applications tailored for Chad's agricultural and business sectors. Stay tuned for exciting updates!
+                  {t('gallery.mobileApps.ctaDescription')}
                 </p>
                 <Button 
                   variant="secondary" 
                   size="lg"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Get Notified
+                  {t('gallery.mobileApps.ctaButton')}
                 </Button>
               </div>
             </div>
