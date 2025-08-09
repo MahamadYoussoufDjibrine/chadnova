@@ -1,69 +1,39 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Database, Code2, Smartphone, ShoppingCart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Portfolio = () => {
+  const navigate = useNavigate();
+
   const portfolioCategories = [
     {
       title: "Data Science",
-      projects: [
-        {
-          title: "Smart Farming Insights",
-          description: "AI-powered agricultural platform providing personalized crop recommendations using real-time climate analysis and satellite imagery",
-          technologies: ["AI", "Machine Learning", "Climate Analysis", "Satellite Mapping", "Agricultural Tech"],
-          liveUrl: "https://tinyurl.com/pwf8jyw7",
-          type: "live"
-        }
-      ]
+      description: "AI-powered solutions and machine learning applications for agricultural and business insights",
+      icon: Database,
+      path: "/portfolio/data-science",
+      count: "1 Project"
     },
     {
       title: "Software Development",
-      projects: [
-        {
-          title: "E-Chad Platform",
-          description: "Digital governance platform for Chad with modern web technologies",
-          technologies: ["React", "JavaScript", "Web Development", "Government Solutions"],
-          liveUrl: "https://etchad.netlify.app/",
-          type: "live"
-        },
-        {
-          title: "Twubake Bakery",
-          description: "Modern e-commerce platform for bakery services and online ordering",
-          technologies: ["React", "E-commerce", "Payment Integration", "Food Services"],
-          liveUrl: "https://twubake.com/",
-          type: "live"
-        },
-        {
-          title: "Food Bank Management System",
-          description: "Comprehensive system for managing food distribution and inventory tracking",
-          technologies: ["React", "Database Management", "Inventory System", "Social Impact"],
-          liveUrl: "https://foodbanksystem.netlify.app/",
-          type: "live"
-        }
-      ]
+      description: "Modern web applications and digital platforms for government and business solutions",
+      icon: Code2,
+      path: "/portfolio/software-development",
+      count: "3 Projects"
     },
     {
       title: "Mobile Applications",
-      projects: [
-        {
-          title: "Coming Soon",
-          description: "Innovative mobile solutions for farmers and traders in Chad",
-          technologies: ["React Native", "Mobile Development", "Cross-Platform"],
-          type: "placeholder"
-        }
-      ]
+      description: "Cross-platform mobile solutions for farmers and traders in Chad",
+      icon: Smartphone,
+      path: "/portfolio/mobile-apps",
+      count: "Coming Soon"
     },
     {
       title: "E-commerce Solutions",
-      projects: [
-        {
-          title: "Coming Soon",
-          description: "Digital marketplace solutions for local businesses and traders",
-          technologies: ["E-commerce", "Payment Integration", "Inventory Management"],
-          type: "placeholder"
-        }
-      ]
+      description: "Digital marketplace solutions for local businesses and online commerce",
+      icon: ShoppingCart,
+      path: "/portfolio/e-commerce",
+      count: "Coming Soon"
     }
   ];
 
@@ -79,69 +49,42 @@ export const Portfolio = () => {
           </p>
         </div>
 
-        <div className="space-y-16">
-          {portfolioCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-                {category.title}
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {category.projects.map((project, projectIndex) => (
-                  <Card key={projectIndex} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50">
-                    <CardHeader>
-                      <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </CardTitle>
-                      <CardDescription className="text-muted-foreground">
-                        {project.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.technologies.map((tech, techIndex) => (
-                          <Badge key={techIndex} variant="outline" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                      
-                      <div className="flex gap-3">
-                        {project.type === "live" && project.liveUrl && (
-                          <Button
-                            variant="default"
-                            size="sm"
-                            className="flex items-center gap-2"
-                            onClick={() => window.open(project.liveUrl, '_blank')}
-                          >
-                            <ExternalLink className="w-4 h-4" />
-                            View Live
-                          </Button>
-                        )}
-                        
-                        {project.type === "github" && project.githubUrl && (
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            className="flex items-center gap-2"
-                            onClick={() => window.open(project.githubUrl, '_blank')}
-                          >
-                            <Github className="w-4 h-4" />
-                            GitHub
-                          </Button>
-                        )}
-                        
-                        {project.type === "placeholder" && (
-                          <Button variant="secondary" size="sm" disabled>
-                            Coming Soon
-                          </Button>
-                        )}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {portfolioCategories.map((category, categoryIndex) => {
+            const IconComponent = category.icon;
+            return (
+              <Card 
+                key={categoryIndex} 
+                className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-border/50 cursor-pointer"
+                onClick={() => navigate(category.path)}
+              >
+                <CardHeader className="text-center">
+                  <div className="mx-auto mb-4 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
+                    <IconComponent className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    {category.title}
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    {category.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <div className="mb-4">
+                    <span className="text-sm font-medium text-primary">{category.count}</span>
+                  </div>
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                  >
+                    View Gallery
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
         
         <div className="text-center mt-16">
