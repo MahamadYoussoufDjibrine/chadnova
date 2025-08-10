@@ -1,50 +1,47 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 import { Code, Database, GraduationCap, Shield, Smartphone, Globe, ShoppingCart } from "lucide-react";
 
 export const Services = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Web Development",
-      description: "Modern, responsive web applications built with cutting-edge technologies",
-      technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS"]
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile solutions for iOS and Android",
-      technologies: ["React Native", "Flutter", "Swift", "Kotlin"]
-    },
-    {
       icon: <Database className="w-8 h-8" />,
-      title: "Data Science",
-      description: "Transform raw data into actionable insights and intelligent solutions",
+      title: t('services.dataScience.title'),
+      description: t('services.dataScience.description'),
       technologies: ["Python", "Machine Learning", "AI", "Analytics"]
     },
     {
-      icon: <GraduationCap className="w-8 h-8" />,
-      title: "Software Engineering Training",
-      description: "Comprehensive training programs to build the next generation of developers",
-      technologies: ["Bootcamps", "Workshops", "Mentorship", "Certification"]
-    },
-    {
-      icon: <ShoppingCart className="w-8 h-8" />,
-      title: "E-commerce Training",
-      description: "Learn to build and manage online stores and digital marketplaces",
-      technologies: ["Shopify", "WooCommerce", "Payment Systems", "Digital Marketing"]
-    },
-    {
       icon: <Code className="w-8 h-8" />,
-      title: "Digital Transformation",
-      description: "Modernize traditional systems with digital solutions for agriculture and trade",
-      technologies: ["IoT", "Automation", "Cloud", "Integration"]
+      title: t('services.softwareDev.title'),
+      description: t('services.softwareDev.description'),
+      technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: t('services.digitalGov.title'),
+      description: t('services.digitalGov.description'),
+      technologies: ["E-Government", "Digital Services", "Integration", "Security"]
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Security Solutions",
-      description: "Robust security systems to protect digital infrastructure and data",
+      title: t('services.cloudSolutions.title'),
+      description: t('services.cloudSolutions.description'),
+      technologies: ["AWS", "Azure", "Cloud Infrastructure", "Scalability"]
+    },
+    {
+      icon: <ShoppingCart className="w-8 h-8" />,
+      title: t('services.cybersecurity.title'),
+      description: t('services.cybersecurity.description'),
       technologies: ["Cybersecurity", "Encryption", "Compliance", "Monitoring"]
+    },
+    {
+      icon: <GraduationCap className="w-8 h-8" />,
+      title: t('services.consulting.title'),
+      description: t('services.consulting.description'),
+      technologies: ["Strategy", "Digital Transformation", "Innovation", "Leadership"]
     }
   ];
 
@@ -53,10 +50,10 @@ export const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive technology solutions designed to drive innovation across Chad and Africa
+            {t('services.subtitle')}
           </p>
         </div>
         

@@ -1,8 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 
 export const About = () => {
+  const { t } = useTranslation();
+  
   const founders = [
     {
       name: "Moussa Mahamat Nassour",
@@ -38,10 +41,10 @@ export const About = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Meet Our <span className="bg-gradient-primary bg-clip-text text-transparent">Founders</span>
+            {t('about.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Three visionary leaders united by a common goal: transforming Chad through technology and innovation
+            {t('about.subtitle')}
           </p>
         </div>
         
@@ -99,10 +102,9 @@ export const About = () => {
         </div>
         
         <div className="bg-gradient-hero p-8 rounded-2xl text-center text-primary-foreground">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Mission</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">{t('about.mission.title')}</h3>
           <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto">
-            To bridge the digital divide in Chad and across Africa by providing world-class technology solutions, 
-            training the next generation of developers, and empowering businesses with innovative digital tools.
+            {t('about.mission.description')}
           </p>
         </div>
       </div>
