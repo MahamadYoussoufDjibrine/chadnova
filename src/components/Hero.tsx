@@ -24,11 +24,10 @@ export const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-medium">
-            Tchad Innovation - Transforming Africa Through Technology
+            {t('hero.title')}
           </p>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            We empower farmers, traders, and governments through cutting-edge digital solutions, 
-            web development, data science, and software engineering training.
+            {t('hero.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
